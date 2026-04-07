@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stylish Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #1e293b;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #38bdf8;
+            border-radius: 5px;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #334155;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    MY WEBSITE
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome Yash 👑</h1>
+    <p>Create your own stylish website</p>
+    <button class="btn" onclick="showMessage()">Click Me</button>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am learning web development and building cool websites.</p>
+</section>
+
+<section id="services" class="section">
+    <h2>My Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Clean and optimized code.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>24/7 help and updates.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: yash@example.com</p>
+</section>
+
+<footer>
+    © 2026 Yash Website | All Rights Reserved
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Welcome to your website 🚀");
+    }
+</script>
+
+</body>
+</html>
